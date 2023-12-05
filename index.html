@@ -25,9 +25,9 @@
           <span :class="{ 'line-through': item.checked }">{{ item.name }}</span>
         </div>
         <div class="flex items-center space-x-2">
-          <button @click="decrementQuantity(index)" class="bg-gray-200 text-gray-600 px-2 rounded">-</button>
+          <button @click="decrementQuantity(index)" class="bg-gray-200 text-gray-600 10px rounded">-</button>
           <span>{{ item.quantity }}</span>
-          <button @click="incrementQuantity(index)" class="bg-gray-200 text-gray-600 px-2 rounded">+</button>
+          <button @click="incrementQuantity(index)" class="bg-gray-200 text-gray-600 10px rounded">+</button>
           <button @click="removeItem(index)" class="text-red-500">Entfernen</button>
         </div>
       </li>
