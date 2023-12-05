@@ -1,5 +1,7 @@
 body {
+ 
 }
+
 h1 {
  float: left;
  box-shadow: 10px 10px 10px grey;
@@ -8,7 +10,11 @@ h1 {
  margin-bottom: 2em;
  color: black;
 }
+
+
+
 button {
+ clear: left;
  float: left;
  box-shadow: 5px 5px 5px black;
  background-color: green;
