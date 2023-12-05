@@ -13,15 +13,11 @@ h1 {
 
 button {
  clear: left;
- float: left;
+ float: center;
  box-shadow: 5px 5px 5px black;
  background-color: green;
 }
 
-input {
- clear: left;
- float: left;
-}
 
 
 
