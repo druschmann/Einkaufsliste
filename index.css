@@ -11,11 +11,7 @@ h1 {
  color: black;
 }
 
-
-
-
-
-button.hinzufuegen {
+button {
  clear: left;
  float: left;
  box-shadow: 5px 5px 5px black;
