@@ -4,15 +4,15 @@ body {
 
 h1 {
  float: left;
+ box-radius: 256px;
  box-shadow: 10px 10px 10px grey;
- border-radius: 4em;
- margin-right: 4em;
- margin-bottom: 4em;
+ border-radius: 2em;
+ margin-right: 2em;
+ margin-bottom: 2em;
  color: black;
 }
 
 button {
- clear: left;
  float: center;
  box-shadow: 5px 5px 5px black;
  background-color: green;
