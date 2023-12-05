@@ -19,7 +19,10 @@ h1 {
 
 input {
 text-align: center;
+}
 
+listItem {
+ line-height: 125%;
 }
 
 
