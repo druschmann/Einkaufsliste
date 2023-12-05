@@ -13,7 +13,12 @@ h1 {
 
 
 
-button {
+input.hinzufuegen {
+ clear: left;
+ float: left;
+}
+
+button.hinzufuegen {
  clear: left;
  float: left;
  box-shadow: 5px 5px 5px black;
