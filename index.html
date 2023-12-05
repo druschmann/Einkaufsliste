@@ -38,6 +38,7 @@
           } else {
             listItem.style.textDecoration = "none";
           }
+		
         };
         listItem.appendChild(checkbox);
 
@@ -47,12 +48,14 @@
         removeButton.classList.add("remove-btn");
         removeButton.onclick = function() {
           listItem.remove();
+		
         };
         listItem.appendChild(removeButton);
         document.getElementById("list-items").appendChild(listItem);
 
 	itemInput.value = "";
         quantityInput.value = "";
+	     
       }
     }
   </script>
