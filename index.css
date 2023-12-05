@@ -17,40 +17,10 @@ button {
  box-shadow: 5px 5px 5px black;
  
 }
-/* Gemeinsame Styles für die Input-Gruppe */
-.input-group {
-    display: flex;
-    align-items: center;
-}
 
-/* Stil für das Eingabefeld */
-.input-group input {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 5px;
-}
-
-/* Stil für den Hinzufügen-Button */
-.input-group button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* Stiländerungen beim Überfahren des Buttons mit der Maus */
-.input-group button:hover {
-    background-color: #45a049;
-}
 
 input {
  float: center;
- float: left;
  
 }
 
