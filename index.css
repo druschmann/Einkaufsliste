@@ -18,4 +18,10 @@ button {
  background-color: green;
 }
 
+input {
+ clear: left;
+ float: left;
+}
+
+
 
