@@ -8,27 +8,27 @@
 </head>
 <body class="bg-gray-100">
   <div id="app" class="mx-auto p-4 max-w-md">
-    <!-- Header -->
+    
     <h1 class="text-2xl font-bold mb-4">Einkaufsliste</h1>
 
     <!-- Eingabefeld für neuen Artikel -->
     <div class="flex mb-4">
-      <input.hinzufuegen v-model="newItem" @keyup.enter="addItem" class="flex-1 rounded-l-lg border border-gray-300 p-2 focus:outline-none focus:ring focus:border-blue-300" placeholder="Neuen Artikel eingeben">
-      <button.hinzufuegen @click="addItem" class="rounded-r-lg bg-blue-500 text-white px-4">Hinzufügen</button.hinzufuegen>
+      <input v-model="newItem" @keyup.enter="addItem" class="flex-1 rounded-l-lg border border-gray-300 p-2 focus:outline-none focus:ring focus:border-blue-300" placeholder="Neuen Artikel eingeben">
+      <button @click="addItem" class="rounded-r-lg bg-blue-500 text-white px-4">Hinzufügen</button>
     </div>
 
     <!-- Liste der Artikel -->
     <ul class="divide-y divide-gray-300">
       <li v-for="(item, index) in items" :key="index" class="flex justify-between items-center py-2">
         <div class="flex items-center space-x-2">
-          <input.checkbox type="checkbox" v-model="item.checked" class="form-checkbox h-5 w-5 text-blue-500">
+          <input type="checkbox" v-model="item.checked" class="form-checkbox h-5 w-5 text-blue-500">
           <span :class="{ 'line-through': item.checked }">{{ item.name }}</span>
         </div>
         <div class="flex items-center space-x-2">
-          <button.weniger @click="decrementQuantity(index)" class="bg-gray-200 text-gray-600 10px rounded">-</button.weniger>
+          <button @click="decrementQuantity(index)" class="bg-gray-200 text-gray-600 10px rounded">-</button>
           <span>{{ item.quantity }}</span>
-          <button.mehr @click="incrementQuantity(index)" class="bg-gray-200 text-gray-600 10px rounded">+</button.mehr>
-          <button.entfernen @click="removeItem(index)" class="text-red-500">Entfernen</button.entfernen>
+          <button @click="incrementQuantity(index)" class="bg-gray-200 text-gray-600 10px rounded">+</button>
+          <button @click="removeItem(index)" class="text-red-500">Entfernen</button>
         </div>
       </li>
     </ul>
@@ -36,7 +36,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
   <script>
-    // Vue.js App
+    
     new Vue({
       el: '#app',
       data: {
