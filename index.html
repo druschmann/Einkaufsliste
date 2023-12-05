@@ -28,6 +28,20 @@
      if (item !== "") {
         var listItem = document.createElement("li");
         listItem.textContent = `${quantity} ${item}`;
+	     
+	var checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.classList.add("checkbox");
+        checkbox.onclick = function() {
+          if (checkbox.checked) {
+            listItem.style.textDecoration = "line-through";
+          } else {
+            listItem.style.textDecoration = "none";
+          }
+        };
+        listItem.appendChild(checkbox);
+
+	
         var removeButton = document.createElement("span");
         removeButton.textContent = "  Entfernen";
         removeButton.classList.add("remove-btn");
